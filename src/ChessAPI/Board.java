@@ -1,5 +1,7 @@
 package ChessAPI;
 
+import java.awt.Color;
+
 public class Board {
 	static final int ROWS = 8;
 	static final int COLS = 8;

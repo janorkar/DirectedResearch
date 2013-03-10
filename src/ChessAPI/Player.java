@@ -14,7 +14,9 @@ public class Player {
 	Queen queen;
 	private Color color;
 	int noOfAlive, noOfDead;
-	
+	int noOfMoves;
+	boolean myTurn;
+
 	public Player(Color c)
 	{
 		color = c;
@@ -36,7 +38,7 @@ public class Player {
 			bishop[i] = new Bishop();
 			rook[i] = new Rook();
 		}
-	
+		noOfMoves = 0;
 	}
 	
 	public void setColor(Color color) {
@@ -56,5 +58,18 @@ public class Player {
 	}
 	
 	//other functions needed by the Player class....
-	
+	public void incNoMoves()
+	{
+		noOfMoves++;
+	}
+
+	public int getNoOfMoves()
+	{
+		return noOfMoves;
+	}
+
+	public boolean isMyTurn()
+	{
+		return myTurn;
+	}
 }
