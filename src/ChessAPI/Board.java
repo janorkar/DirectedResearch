@@ -1,5 +1,7 @@
 package ChessAPI;
 
+import java.awt.Color;
+
 public class Board {
 	static final int ROWS = 8;
 	static final int COLS = 8;
@@ -33,6 +35,5 @@ public class Board {
 	}
 	
 	//other methods needed in the Board class....
-	//adding now
-	//testing comment
+
 }
